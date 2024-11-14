@@ -33,4 +33,7 @@ def predict_fraud():
     })
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    # Get the port from the environment variable, default to 5000 if not set
+    port = int(os.getenv("PORT", 5000))
+    # Run the Flask app, binding to 0.0.0.0 and the specified port
+    app.run(host="0.0.0.0", port=port, debug=True)
