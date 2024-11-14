@@ -5,7 +5,7 @@ import os
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("https://credit-card-fraud-detection-dp3z.onrender.com")
 def index():
     return render_template("index.html")
 
